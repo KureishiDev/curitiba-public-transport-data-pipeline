@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+  airflow:
+    image: apache/airflow:2.9.2
+    container_name: airflow-standalone
+    restart: always
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=SequentialExecutor
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      # Fernet key VÁLIDA (não trocar caracteres)
+      - AIRFLOW__CORE__FERNET_KEY=h7Q3LJD9rNqYqT5xGX2YeliYg5OtTSHI3VIRVKiwoVk=
+      - AIRFLOW_HOME=/opt/airflow
+      # para o Python achar o pacote etl dentro do container
+      - PYTHONPATH=/opt/airflow
+      - DW_CONN_STR=${DW_CONN_STR}
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - ../data:/opt/airflow/data
+      # monta a pasta etl do seu projeto dentro do container
+      - ../etl:/opt/airflow/etl
+    ports:
+      - "8082:8080"
+    command: standalone
