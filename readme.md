@@ -1,6 +1,12 @@
 # Curitiba Mobility Data Platform  
 ETL com Airflow + Data Warehouse PostgreSQL + API Spring Boot
-
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white)
+![Airflow](https://img.shields.io/badge/Apache_Airflow-017CEE?style=for-the-badge&logo=apache-airflow&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apache-kafka&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
 
 Este projeto implementa uma plataforma completa de engenharia de dados utilizando dados públicos de mobilidade urbana de Curitiba. O pipeline realiza ingestão incremental, transformação estruturada, modelagem dimensional e exposição dos dados tratados por uma API REST Java Spring Boot.
 <img width="1761" height="372" alt="diagramapirest" src="https://github.com/user-attachments/assets/aad15dae-6589-424b-a4fa-b80b743c299a" />
