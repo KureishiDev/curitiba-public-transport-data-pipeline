@@ -33,8 +33,6 @@ flowchart LR
 
 -------------------------------------------------------------------------------
 
-Estrutura de Pastas
-
 mobilidade-curitiba/
 │
 ├── airflow/
@@ -201,8 +199,6 @@ Rodar a API:
 cd api
 ./mvnw spring-boot:run
 
-API em:
-http://localhost:8080
 
 -------------------------------------------------------------------------------
 
