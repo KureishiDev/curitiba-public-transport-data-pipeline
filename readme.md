@@ -34,7 +34,6 @@ flowchart LR
 -------------------------------------------------------------------------------
 
 mobilidade-curitiba/
-│
 ├── airflow/
 │   ├── dags/
 │   │   └── dag_mobilidade_curitiba.py
@@ -68,6 +67,7 @@ mobilidade-curitiba/
 │   └── pom.xml
 │
 └── README.md
+
 
 -------------------------------------------------------------------------------
 
