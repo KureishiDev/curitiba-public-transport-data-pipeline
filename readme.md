@@ -63,7 +63,7 @@ mobilidade-curitiba/
 │       └── gold/
 │
 ├── api/
-│   ├── src/main/java/com/mobility
+│   ├── src/main/java/com/mobility/
 │   ├── src/main/resources/application.yml
 │   └── pom.xml
 │
