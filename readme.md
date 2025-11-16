@@ -33,40 +33,7 @@ flowchart LR
 
 -------------------------------------------------------------------------------
 
-mobilidade-curitiba/
-├── airflow/
-│   ├── dags/
-│   │   └── dag_mobilidade_curitiba.py
-│   └── docker-compose.yaml
-│
-├── data/
-│   └── landing/
-│       └── dt=YYYY-MM-DD/
-│           ├── linhas.json
-│           ├── tabelalinha.json
-│           ├── shapelinha.json
-│           ├── trechos_itinerarios.json
-│           ├── pontos_linha.json
-│           ├── pois.json
-│           └── tabelaveiculo.json
-│
-├── etl/
-│   ├── extract_gtfs.py
-│   ├── load_to_staging.py
-│   ├── load_silver.py
-│   ├── load_gold.py
-│   ├── utils/
-│   │   └── schema_validation.py
-│   └── sql/
-│       ├── silver/
-│       └── gold/
-│
-├── api/
-│   ├── src/main/java/com/mobility/
-│   ├── src/main/resources/application.yml
-│   └── pom.xml
-│
-└── README.md
+<img width="299" height="681" alt="image" src="https://github.com/user-attachments/assets/e4e6ec16-d585-4fe9-9e94-8a0616fede33" />
 
 
 -------------------------------------------------------------------------------
