@@ -69,40 +69,7 @@ Tabelas fato:
 
 Modelo Dimensional (Star Schema)
 
-erDiagram
-
-    FATO_VIAGEM {
-        bigint id
-        bigint linha_id
-        bigint tempo_id
-        int viagens_realizadas
-        int passageiros
-    }
-
-    DIM_LINHA {
-        bigint id
-        string codigo
-        string nome
-        string tipo
-    }
-
-    DIM_EMPRESA {
-        bigint id
-        string empresa
-    }
-
-    DIM_TEMPO {
-        bigint id
-        date data
-        int ano
-        int mes
-        int dia
-        int dia_semana
-    }
-
-    DIM_LINHA ||--o{ FATO_VIAGEM : relaciona
-    DIM_TEMPO ||--o{ FATO_VIAGEM : relaciona
-    DIM_EMPRESA ||--o{ DIM_LINHA : opera
+<img width="288" height="515" alt="image" src="https://github.com/user-attachments/assets/1d1a6d38-2985-46b9-a917-f32c9721b003" />
 
 -------------------------------------------------------------------------------
 
