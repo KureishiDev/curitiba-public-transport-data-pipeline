@@ -31,15 +31,7 @@ O objetivo é demonstrar como construir uma arquitetura moderna e escalável, un
 
 -------------------------------------------------------------------------------
 
-Arquitetura Geral
 
-flowchart LR
-    A[Arquivos JSON<br/>Landing Zone] --> B[Airflow ETL]
-    B --> C[Staging Layer<br/>PostgreSQL]
-    C --> D[Silver Layer<br/>Curadoria e Limpeza]
-    D --> E[Gold Layer<br/>Modelagem Dimensional]
-    E --> F[Spring Boot API]
-    F --> G[Dashboards / Aplicações Externas]
 
 -------------------------------------------------------------------------------
 
